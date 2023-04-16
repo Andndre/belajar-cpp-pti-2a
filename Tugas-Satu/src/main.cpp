@@ -14,12 +14,12 @@ int main()
     float diskon = 0.0f;
     int total = barang1 + barang2;
 
-    if (total > 500000)
+    if (total >= 500000)
     {
         cout << "Selamat!, anda mendapat diskon 25%" << endl;
         diskon = total * 0.25f;
     }
-    else if (total > 250000)
+    else if (total >= 250000)
     {
         cout << "Selamat!, anda mendapat diskon 10%" << endl;
         diskon = total * 0.1f;
@@ -31,5 +31,7 @@ int main()
 
     int hargaBayar = total - diskon;
 
+    cout << "Harga total: " << total << endl;
+    cout << "Diskon: " << diskon << endl;
     cout << "Harga yang harus dibayar: " << hargaBayar << endl;
 }
