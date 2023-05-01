@@ -4,11 +4,12 @@ using namespace std;
 
 int main()
 {
-    int hasil = 0, perulangan = 0, i = 2, maxPerulangan = 1;
+    unsigned short hasil = 0, i = 2;
 
-    const int BARIS = 5;
+    unsigned char perulangan = 0, maxPerulangan = 1;
+    const unsigned char BARIS = 5;
 
-    for (int j = 1; j <= BARIS; j++)
+    for (unsigned char j = 1; j <= BARIS; j++)
     {
         cout << i;
 
